@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="vi">
   <head>
     <title>Lào Cai</title>
@@ -6,10 +6,10 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://giabao123123.github.io/webcon/web%20con.css"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" />
+    <link rel="stylesheet" href="Style.css" />
     
 <link rel="shortcut icon" href="./Logo/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="./Logo/android-chrome-512x512.png" type="image/x-icon">
@@ -18,16 +18,11 @@
 <link rel="shortcut icon" href="./Logo/favicon-16x16.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/android-chrome-192x192.png" type="image/x-icon">
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <style></style>
   </head>
-  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+  <body class="w3-light-grey" id="hero">
     <a href="#hero" class="scroll-top-button">
       <i class="fas fa-chevron-up"></i>
     </a>
@@ -37,11 +32,11 @@
         <span class="arrow arrow-2"></span>
       </a>
     </aside>
-    <aside class="box w3-right neon-box2" style="margin-top: 2%">
-      <p class="text">Chào mừng đến với tỉnh Lào Cai!</p>
-    </aside>
     <header class="w3-top">
-      <nav class="w3-bar w3-white w3-padding w3-card">
+      <nav
+        class="w3-bar w3-white w3-padding w3-card"
+        aria-label="Thanh điều hướng chính"
+      >
         <a href="https://giabao123123.github.io/mienvietnam/" class="w3-bar-item neon-box">Lào Cai</a>
         <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
           ❮
@@ -52,10 +47,6 @@
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">☰</label>
         <ul
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fffaf0;
-          "
           class="menu w3-right w3-button"
           id="menu-list"
         >
@@ -77,13 +68,10 @@
           </li>
         </ul>
         <nav
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fff3cd;
-          "
           class="w3-animate-left w3-hide-small neon-box"
+          aria-label="Menu cuộn desktop"
         >
-          <section class="menu-scroll">
+          <div class="menu-scroll" role="list">
             <a href="#about" class="w3-bar-item w3-button"
               >LỊCH SỬ HÌNH THÀNH</a
             >
@@ -112,11 +100,47 @@
               class="w3-bar-item w3-button"
               >TRÒ CHƠI</a
             >
-          </section>
+          </div>
         </nav>
       </nav>
+      <aside
+        class="box w3-right neon-box2"
+        aria-label="Lời chào"
+      >
+        <p class="text">Chào mừng đến với tỉnh Lào Cai!</p>
+      </aside>
     </header>
     <main class="w3-content" style="max-width: 1100px">
+      <section class="hero-vl" aria-label="Giới thiệu tỉnh Lào Cai">
+        <div
+          class="hero-vl-bg"
+          style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Sapa_fansipan_from_cat_cat_village.jpg/1280px-Sapa_fansipan_from_cat_cat_village.jpg')"
+        ></div>
+        <div class="hero-vl-scrim"></div>
+        <div class="hero-vl-content">
+          <p class="hero-vl-kicker">Nóc Nhà Đông Dương</p>
+          <h1 class="hero-vl-title">Lào Cai</h1>
+          <p class="hero-vl-sub">
+            Vùng đất của đỉnh Fansipan và sông Hồng — Sa Pa mây phủ, ruộng bậc
+            thang Bắc Hà và bản sắc đa dân tộc hội tụ nơi cửa ngõ Tây Bắc.
+          </p>
+          <div class="hero-vl-stats">
+            <div class="hero-vl-stat">
+              <span>13.256,92 km²</span>
+              <small>Diện tích</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>Hơn 1,7 triệu</span>
+              <small>Dân số</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>3.143 m</span>
+              <small>Đỉnh Fansipan</small>
+            </div>
+          </div>
+        </div>
+        <div class="hero-vl-waves"></div>
+      </section>
       <section class="w3-row w3-padding-16 w3-animate-left" id="about">
         <h1 class="w3-center" style="color: red; font-size: 35px">
           LỊCH SỬ HÌNH THÀNH
@@ -712,92 +736,92 @@
             {
               name: "Huyện Bảo Yên",
               parent: "Tỉnh Lào Cai cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/bao-yen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/bao-yen?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện  Bảo Thắng",
               parent: "Tỉnh Lào Cai cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/bao-thang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/bao-thang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Bắc Hà",
               parent: "Tỉnh Lào Cai cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/bac-ha?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/bac-ha?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Si Ma Cai",
               parent: "Tỉnh Lào Cai cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/si-ma-cai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/si-ma-cai?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Mường Khương",
               parent: "Tỉnh Lào Cai cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/muong-khuong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/muong-khuong?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Bát Xát",
               parent: "Tỉnh Lào Cai cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/bat-xat?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/bat-xat?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Văn Bàn",
               parent: "Tỉnh Lào Cai cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/van-ban?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/van-ban?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Sa Pa",
               parent: "Tỉnh Lào Cai cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/sa-pa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/sa-pa?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Lào Cai",
               parent: "Tỉnh Lào Cai cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/lao-cai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/lao-cai/lao-cai?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Yên Bình",
               parent: "Tỉnh Yên Bái cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/yen-binh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/yen-binh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Văn Chấn",
               parent: "Tỉnh Yên Bái cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/van-chan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/van-chan?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Trạm Tấu",
               parent: "Tỉnh Yên Bái cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/tram-tau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/tram-tau?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Trấn Yên",
               parent: "Tỉnh Yên Bái cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/tran-yen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/tran-yen?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Mù Căng Chải",
               parent: "Tỉnh Yên Bái cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/mu-cang-chai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/mu-cang-chai?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Văn Yên",
               parent: "Tỉnh Yên Bái cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/van-yen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/van-yen?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Lục Yên",
               parent: "Tỉnh Yên Bái cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/luc-yen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/luc-yen?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Nghĩa Lộ",
               parent: "Tỉnh Yên Bái cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/nghia-lo?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/nghia-lo?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Yên Bái",
               parent: "Tỉnh Yên Bái cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/yen-bai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/yen-bai/yen-bai?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
           ];
           function ttNorm(s) {
@@ -920,11 +944,13 @@
                   border: 1px solid #999;
                 "
               >
-                <tr style="background: #f0f0f0">
-                  <th>Năm</th>
-                  <th>Dân số</th>
-                  <th>±%</th>
-                </tr>
+                <thead>
+                  <tr style="background: #f0f0f0">
+                    <th>Năm</th>
+                    <th>Dân số</th>
+                    <th>±%</th>
+                  </tr>
+                </thead>
                 <tbody>
                   <tr>
                     <td>1995</td>
@@ -3601,7 +3627,6 @@
           </figcaption>
           <canvas id="grdpChartLaoCai" class="w3-center"></canvas>
         </figure>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>
           const ctx = document
             .getElementById("grdpChartLaoCai")
@@ -5199,10 +5224,7 @@
     <footer class="w3-center w3-light-grey w3-padding-32">
       <p>HẾT!</p>
     </footer>
+    <script src="animations.js"></script>
   </body>
 </html>
-
-
-
-
 
